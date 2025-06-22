@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="gameHeaderBar">
+      <div class="gameTitle">
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissor</span>
+      </div>
+      <div class="scoreContainer">
+        <div class="computerScoreContainer">
+          <span>COMPUTER SCORE</span>
+          <span class="computerScore"></span>
+        </div>
+        <div class="userScoreContainer">
+          <span
+            >YOUR <br />
+            SCORE</span
+          >
+          <span class="userScore"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainContainer">
+      <div class="choicesContainer">
+        <button class="rockButton"><i class="fas fa-hand-rock"></i></button>
+        <button class="paperButton"><i class="fas fa-hand-paper"></i></button>
+        <button class="scissorButton rotate-up">
+          <i class="fas fa-hand-scissors"></i>
+        </button>
+      </div>
+
+      <div class="rulesContainer">
+        <div class="rulesBox hide">
+          <h2>Game Rules</h2>
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li>
+              Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”
+            </li>
+            <li>
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time
+            </li>
+            <li>
+              If both players lay down the same hand, each player lays down
+              another hand
+            </li>
+          </ul>
+          <button class="closeRulesBtn">✕</button>
+        </div>
+
+        <div class="gameButtons">
+          <button class="ruleBtn">RULES</button>
+          <button class="nextBtn hide-next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="resultsContainer remove">
+        <div class="userResult">
+          <span>YOU PICKED</span>
+          <button class="userSelectedChoice"></button>
+          <div class="animateUserSelection hide">
+            <div class="userRing userRing1"></div>
+            <div class="userRing userRing2"></div>
+            <div class="userRing userRing3"></div>
+          </div>
+        </div>
+
+        <div class="resultMessageContainer">
+          <span class="resultMessage1">YOU WON</span>
+          <span class="resultMessage2">AGAINST PC</span>
+          <button class="playAgainBtn">PLAY AGAIN</button>
+        </div>
+
+        <div class="computerResult">
+          <span>PC PICKED</span>
+          <button class="computerSelectedChoice"></button>
+          <div class="animateComputerSelection hide">
+            <div class="computerRing computerRing1"></div>
+            <div class="computerRing computerRing2"></div>
+            <div class="computerRing computerRing3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hurrayPage displayHurrayPage remove">
+      <img class="hurrayImage" src="hurrayImg.JPG" alt="Hurray Image Logo" />
+      <span class="hurrayText1">HURRAY!!</span>
+      <span class="hurrayText2">YOU WON THE GAME</span>
+    </div>
+    <script src=" script.js"></script>
+  </body>
 </html>
