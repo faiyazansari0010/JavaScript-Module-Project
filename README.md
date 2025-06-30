@@ -5,6 +5,8 @@ JavaScript Module Project - Rock Paper Scissor Game using JavaScript
 
 Description :
 
+**Tech used: HTML, CSS, JavaScript (Vanilla JS), LocalStorage**
+
 • Developed a dynamic Rock Paper Scissors web game using vanilla **JavaScript**, **HTML**, and **CSS**, enabling real-time gameplay between the user and the computer.
 
 • Implemented **score tracking** for both user and computer, persisting data in browser **localStorage** to maintain scores across page reloads.
